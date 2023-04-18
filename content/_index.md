@@ -1,4 +1,4 @@
-Thanks for stopping by. My name is Gowtham Gopalakrishnan and I currently work as 1x systems engineer at [Freshworks](https://freshworks.com). I help manage SMTP services for all Freshworks products. I'm planning to write here regularly about the things I learn along the way.
+Thanks for stopping by. My name is Gowtham Gopalakrishnan and I currently work as 1x systems engineer at [Freshworks](https://freshworks.com). I ~~help manage SMTP services~~ am currently developing webhooks as a service from scratch using golang for all Freshworks products. I'm planning to write here regularly about the things I learn along the way.
 
 ---
 
