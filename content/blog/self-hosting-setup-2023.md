@@ -2,7 +2,6 @@
 title = "Self Hosting Setup - 2023"
 date = "2023-02-19T23:54:12+05:30"
 description = "Software that I self host as of 2023."
-
 tags = ["self-hosting"]
 +++
 
