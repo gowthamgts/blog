@@ -6,11 +6,9 @@ description = "This entry discusses how I debugged duplicate message deliveries 
 tags = ["blog","programming","debugging","work"]
 +++
 
----
+> Update 19, Sep 2023: Go team [confirmed](https://go.dev/blog/loopvar-preview) the default behaviour will be changed from version 1.22.
 
-_Update 19, Sep 2023:_ Go team [confirmed](https://go.dev/blog/loopvar-preview) the default behaviour will be changed from version 1.22.
-
-![AI generated image of a gopher biting a man](/img/gopher.jpg)
+![AI generated image of a gopher biting a man](/img/gopher.jpg "AI generated image of a gopher biting a man")
 
 At work, both my previous project and the current project I'm working on relies on SQS for failure retries with exponential backoff. The current project is a _webhook service_ that delivers webhooks to our customers from our products and also among internal services. We use SQS for failure retries and the current queue setup looks like this:
 
