@@ -6,15 +6,15 @@ tags = ["gaming", "devices"]
 
 +++
 
-> This entry was supposed to go live on December 2023 and it was never published until a year after in 2024.
+> This entry was supposed to go live on December 2023 and it was only published until a year after in 2024.
 
-I was 10 and was hooked after playing [Road Rash](https://en.wikipedia.org/wiki/Road_Rash) for the first time on a PC in my neighbour's house. My parents got me a Toshiba laptop at 17 years old and I played some casual games in it from time to time. This laptop served me great for 4 years and then one day during heavy thunderstorms, it got fried due to an electrical surge.
+I was 10 years old when I got hooked with [Road Rash](https://en.wikipedia.org/wiki/Road_Rash) on a PC at my neighbour's house. My parents got me a Toshiba laptop when I was 17 years old and I played some casual games in it from time to time. This laptop served me great for 4 years and then one day during heavy thunderstorms, it got fried due to an electrical surge.
 
 I bought a second laptop &mdash; this time a Lenovo with Nvidia 960M graphics inside with my side gig money. This one worked for 3 years and I extended 3 more years by changing its internal disk to SSD. By this time, I also had a 13-inch macbook pro from work and since it's unix based, it became my goto for all development work.
 
 I then bought two more mac devices (2018 Macbook Pro and 2023 M2 Mac Mini), but the urge to build myself a desktop PC was still there and I wanted to build a PC myself. Currently, Mac Mini works great for my development work and for some cracked sessions in [Factorio](https://en.wikipedia.org/wiki/Factorio), but some good games like [Cities Skylines](https://en.wikipedia.org/wiki/Cities:_Skylines), [Stronghold Crusader](https://en.wikipedia.org/wiki/Stronghold:_Crusader) series, [Anno 1800](https://en.wikipedia.org/wiki/Anno_1800) and other castle simulation RTS games were only available on PC.
 
-I had some free time in December and thought I could do this small project in the holidays. I stumbled upon [GamersNexus](https://www.youtube.com/c/GamersNexus) and lurked on [IndianGaming discord](https://discord.com/invite/uJggF6Z) for research and clarified some of my questions to the community. Since I already had a 4k monitor (Dell Ultrasharp U2720Q), I wanted to build a system that can comfortably handle at least 1440p. So, after tons of research this is my parts list:
+I had some free time in December and thought I could build a PC for the holidays. I stumbled upon [GamersNexus](https://www.youtube.com/c/GamersNexus) and lurked on [IndianGaming discord](https://discord.com/invite/uJggF6Z) for research and clarified some of my questions with the community. Since I already had a 4k monitor (Dell Ultrasharp U2720Q), I wanted to build a system that can comfortably handle at least 1440p. So, after tons of research this is my parts list:
 
 | Component   | Part                                        |     Price |
 | :---------- | :------------------------------------------ | --------: |
@@ -28,7 +28,7 @@ I had some free time in December and thought I could do this small project in th
 | CPU Cooler  | Deepcool AK620 120MM                        |    ₹5,475 |
 |             | _Total (excluding shipping)_                | ₹1,74,975 |
 
-If you're building a PC in India, you should visit [pcpricetracker](https://pcpricetracker.in) to compare prices between multiple PC parts online retailers. Amazon was costly even with a 5% discount from Amazon Pay card. You should also check with offline retail stores in your cities. I got most of the parts from an offline retail store in Coimbatore. The cabinet and the CPU cooler that I wanted were not available in that store, so I had to order online at [PC Studio](https://www.pcstudio.in).
+If you're building a PC in India, you should definitely visit [pcpricetracker](https://pcpricetracker.in) to compare prices between multiple PC parts online retailers. Amazon was costly even with a 5% discount from Amazon Pay card. You should also check with offline retail stores in your cities. I got most of the parts from an offline retail store in Coimbatore. The cabinet and the CPU cooler that I wanted were not available in that store, so I had to order online at [PC Studio](https://www.pcstudio.in).
 
 After all the parts arrived, I unpacked all the parts. I knew it will take a lot of patience, so I prepared everything for the BIOS POST.
 
