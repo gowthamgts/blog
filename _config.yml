@@ -2,7 +2,7 @@ title: Gowtham
 email: blog@gowtham.dev
 description: >-
   rants, learnings and documentations from a 1x engineer.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://gowtham.dev"
 permalink: /:categories/:slug:output_ext
 links:
