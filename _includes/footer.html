@@ -1,0 +1,21 @@
+<a rel="me" href="https://mastodon.online/@gts"></a>
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper footer">
+    <p>
+        <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
+        <svg class="svg-icon orange">
+            <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+        </svg>
+        </a>
+    </p>
+    <p>
+        <a href="{{ site.links.github }}">
+        <svg class="svg-icon black">
+            <use xlink:href="{{ 'assets/minima-social-icons.svg#github' | relative_url }}"></use>
+        </svg>
+        </a>
+    </p>
+  </div>
+</footer>
