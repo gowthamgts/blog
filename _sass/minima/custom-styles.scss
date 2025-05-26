@@ -97,6 +97,7 @@ ul {
   list-style-type: none;
 }
 
+#tags ul,
 #tags li {
   display: inline-block;
   margin: 0.25em 0.25em 0.25em 0;
@@ -105,6 +106,18 @@ ul {
     font-size: 14px;
     text-decoration: underline;
   }
+}
+
+/* Restore default list styles for post content */
+.post-content ul,
+.post-content ol {
+  list-style-type: disc;
+  margin-left: 2em;
+  padding-left: 0;
+}
+
+.post-content ol {
+  list-style-type: decimal;
 }
 
 #post-list li {
