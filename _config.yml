@@ -36,3 +36,6 @@ social:
 exclude:
   - README.md
   - .github/
+
+minima:
+  skin: auto
