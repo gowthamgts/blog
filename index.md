@@ -13,15 +13,32 @@ Apart from work, I wander around servers most of the time. I try to [self-host](
 
 I also love playing RTS and castle-simulation games ([Anno 1800](https://store.steampowered.com/app/916440/Anno_1800/), [Cities Skylines](https://www.paradoxinteractive.com/games/cities-skylines/about), [Stronghold Crusader 2](https://store.steampowered.com/app/232890/Stronghold_Crusader_2), [Factorio](https://www.factorio.com), etc) to relax. I also do lan party and play Call of Duty with an online friend, whom I met about 5 years ago.
 
-<h2>Recent Blog Entries</h2>
-<ul id="post-list">
-  {% assign blog_entries = site.posts | where_exp: "post", "post.category != 'til'" %}
-  {% for post in blog_entries limit: 5 %}
-    <li>
-      <small>{{ post.date | date_to_string }}</small> &nbsp;
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="home-sections">
+  <div class="home-section">
+    <h2>Recent Blog Entries</h2>
+    <ul id="post-list">
+      {% assign blog_entries = site.posts | where_exp: "post", "post.category != 'til'" %}
+      {% for post in blog_entries limit: 10 %}
+        <li>
+          <small>{{ post.date | date_to_string }}</small> &nbsp;
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="home-section">
+    <h2>Recent TIL Entries</h2>
+    <ul id="post-list">
+      {% assign til_entries = site.posts | where: "category", "til" %}
+      {% for post in til_entries limit: 10 %}
+        <li>
+          <small>{{ post.date | date_to_string }}</small> &nbsp;
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
 <i>You can contact me at blog(@)gowtham.dev. site built with [jekyll](https://jekyllrb.com/).</i>
