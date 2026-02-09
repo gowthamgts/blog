@@ -7,7 +7,7 @@ tags: self-hosting servers
 description: "Software that I self host as of 2025."
 ---
 
-It's been [two years]({% post_url 2023-02-19-self-hosting-setup-2023 %}) since the last self-hosting setup post. The setup largely remained pretty much the same with the following changes:
+It's been [two years]({% post_url blog/2023-02-19-self-hosting-setup-2023 %}) since the last self-hosting setup post. The setup largely remained pretty much the same with the following changes:
 
 * [piHole](https://pi-hole.net/) and [dnscrypt-proxy](https://github.com/DNSCrypt/dnscrypt-proxy) has been replaced with [Adguard Home](https://adguard.com/en/adguard-home/overview.html) since it does both.  
 * [photoprism](https://www.photoprism.app/) \- self-hosted alternative to google photos and iCloud photos. I have bought a new iPhone with iCloud plans for my family, but I'm still backing up all the photos here just in case. I am planning to explore immich in the next year when I get some time.  

@@ -15,26 +15,12 @@ I also love playing RTS and castle-simulation games ([Anno 1800](https://store.s
 
 <div class="home-sections">
   <div class="home-section">
-    <h2>Recent Blog Entries</h2>
+    <h2>Recent Entries</h2>
     <ul id="post-list">
-      {% assign blog_entries = site.posts | where_exp: "post", "post.category != 'til'" %}
-      {% for post in blog_entries limit: 10 %}
+      {% for post in site.posts limit: 15 %}
         <li>
           <small>{{ post.date | date_to_string }}</small> &nbsp;
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="home-section">
-    <h2>Recent TIL Entries</h2>
-    <ul id="post-list">
-      {% assign til_entries = site.posts | where: "category", "til" %}
-      {% for post in til_entries limit: 10 %}
-        <li>
-          <small>{{ post.date | date_to_string }}</small> &nbsp;
-          <a href="{{ post.url }}">{{ post.title }}</a>
+          <a href="{{ post.url }}">{{ post.title }}</a>{% if post.category == 'til' %}<sup class="til-tag">TIL</sup>{% endif %}
         </li>
       {% endfor %}
     </ul>

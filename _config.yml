@@ -29,6 +29,7 @@ author:
 header_pages:
   - blog.md
   - til.md
+  - colophon.md
 
 social:
   name: Gowtham Gopalakrishnan

@@ -55,6 +55,14 @@ ul {
   margin: 0.5em 0;
 }
 
+.til-tag {
+  font-size: 0.65em;
+  font-weight: 600;
+  color: #666;
+  margin-left: 0.3em;
+  vertical-align: super;
+}
+
 .home img {
   max-width: 200px;
   border-radius: 50%;
@@ -101,4 +109,19 @@ small,
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+}
+
+.post-header {
+  margin-bottom: 1rem;
+}
+
+.post-title {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.post-content h3,
+.post-content h4 {
+  margin-top: 1rem;
+  line-height: 1.2;
 }
