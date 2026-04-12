@@ -16,7 +16,7 @@ I've been using ACT broadband for my home network for quite a while and they did
 > There are lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversals, SLAAC, etc.
 {: .info }
 
-I recently got an IKEA desk and I had to shift everything around since it's a big desk. As part of it, I was testing my network connectivity and noticed that `ping google.com` succeeded, but `ping6 google.com` failed. Weird, I thought my ISP might have disabled IPv6 again. I confirmed ISP connectivity via IPv6 into my router's admin portal. Then I shouldn't have a problem connecting to IPv6???
+I was testing my network connectivity due to a recent desk upgrade and noticed that `ping google.com` succeeded, but `ping6 google.com` failed. Weird, I thought my ISP might have disabled IPv6 again. I confirmed ISP connectivity via IPv6 into my router's admin portal. Then I shouldn't have a problem connecting to IPv6?
 
 Maybe an issue with the device? I checked my macOS network settings and I have IPv6 allowed there as well.
 

@@ -9,9 +9,7 @@ layout: home
 
 Hello 👋, I'm Gowtham Gopalakrishnan and I currently work as a Systems Engineer at [Freshworks](https://freshworks.com). I'm planning to write here regularly about the things I learn along the way. Check out the [TIL](/til.html) or the [blog](/blog.html) entries.
 
-Apart from work, I wander around servers most of the time. I try to [self-host](/tag/self-hosting.html) most of the software I use. I do occasionally [contribute](https://github.com/gowthamgts) to open-source projects.
-
-I also love playing RTS and castle-simulation games ([Anno 1800](https://store.steampowered.com/app/916440/Anno_1800/), [Cities Skylines](https://www.paradoxinteractive.com/games/cities-skylines/about), [Stronghold Crusader 2](https://store.steampowered.com/app/232890/Stronghold_Crusader_2), [Factorio](https://www.factorio.com), etc) to relax. I also do lan party and play Call of Duty with an online friend, whom I met about 5 years ago.
+Apart from work, I wander around servers most of the time. I try to [self-host](/tag/self-hosting.html) most of the software I use. I do occasionally [contribute](https://github.com/gowthamgts) to open-source projects. I also love playing RTS and castle-simulation games ([Anno 1800](https://store.steampowered.com/app/916440/Anno_1800/), [Cities Skylines](https://www.paradoxinteractive.com/games/cities-skylines/about), [Stronghold Crusader 2](https://store.steampowered.com/app/232890/Stronghold_Crusader_2), [Factorio](https://www.factorio.com), etc), do Call of Duty lan parties to relax.
 
 <div class="home-sections">
   <div class="home-section">
