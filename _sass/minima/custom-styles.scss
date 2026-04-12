@@ -103,7 +103,9 @@ ul {
 }
 
 small,
-#tags {
+#tags,
+details,
+blockquote {
   font-family: $monospace-font-family;
 }
 
@@ -124,4 +126,21 @@ h1, h2, h3, h4, h5, h6 {
 .post-content h4 {
   margin-top: 1rem;
   line-height: 1.2;
+}
+
+blockquote {
+  font-size: inherit;
+  font-style: inherit;
+
+  &.info {
+    border-color: #478be6;
+  }
+}
+
+details {
+  padding: .5em;
+  margin: 1em 0;
+  border: 2px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
 }
