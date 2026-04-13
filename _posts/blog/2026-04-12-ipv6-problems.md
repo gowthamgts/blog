@@ -11,7 +11,7 @@ description: "Debugging why IPv6 was not working on my home network even though 
   It was a setting on my Adguard Home DNS which disables IPv6 by default.
 </details>
 
-I've been using ACT broadband for my home network for quite a while and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6 in my router and it worked without any issues. I just did a quick test and just forgot about it.
+I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6 in my router and it worked without any issues. I just did a quick test and just forgot about it.
 
 > There are lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversals, SLAAC, etc.
 {: .info }
