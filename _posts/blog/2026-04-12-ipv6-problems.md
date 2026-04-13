@@ -8,7 +8,7 @@ description: "Debugging why IPv6 was not working on my home network even though 
 ---
 <details>
   <summary>TLDR (click to expand)</summary>
-  It was a setting on my Adguard Home DNS which disables IPv6 by default.
+  It was a setting on my Adguard Home DNS which disabled all IPv6 DNS queries.
 </details>
 
 I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6 in my router and it worked without any issues. I just did a quick test and just forgot about it.
