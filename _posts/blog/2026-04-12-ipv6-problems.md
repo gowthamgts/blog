@@ -11,10 +11,7 @@ description: "Debugging why IPv6 was not working on my home network even though 
   It was a setting on my Adguard Home DNS which disabled all IPv6 DNS queries.
 </details>
 
-I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6 in my router and it worked without any issues. I just did a quick test and just forgot about it.
-
-> There are lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversals, SLAAC, etc.
-{: .info }
+I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6[^1] in my router and it worked without any issues. I just did a quick test and just forgot about it.
 
 I was testing my network connectivity due to a recent desk upgrade and noticed that `ping google.com` succeeded, but `ping6 google.com` failed. Weird, I thought my ISP might have disabled IPv6 again. I confirmed ISP connectivity via IPv6 into my router's admin portal. Then I shouldn't have a problem connecting to IPv6?
 
@@ -58,3 +55,5 @@ PING google.com(maa05s16-in-x0e.1e100.net (2404:6800:4007:817::200e)) 56 data by
 rtt min/avg/max/mdev = 1.557/1.597/1.661/0.063 ms
 ```
 ---------
+
+[^1]: There are lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversals, SLAAC, etc.
