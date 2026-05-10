@@ -11,9 +11,9 @@ description: "Debugging why IPv6 was not working on my home network even though 
   It was a setting on my Adguard Home DNS which disabled all IPv6 DNS queries.
 </details>
 
-I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6[^1] in my router and it worked without any issues. I just did a quick test and just forgot about it.
+I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6[^1] in my router and it worked without any issues. I ran a quick test and forgot about it.
 
-I was testing my network connectivity due to a recent desk upgrade and noticed that `ping google.com` succeeded, but `ping6 google.com` failed. Weird, I thought my ISP might have disabled IPv6 again. I confirmed ISP connectivity via IPv6 into my router's admin portal. Then I shouldn't have a problem connecting to IPv6?
+I was testing my network connectivity due to a recent desk upgrade and noticed that `ping google.com` succeeded, but `ping6 google.com` failed. Weird, I thought my ISP might have disabled IPv6 again. I confirmed IPv6 connectivity from my ISP via my router's admin portal. So why was I having a problem connecting over IPv6?
 
 Maybe an issue with the device? I checked my macOS network settings and I have IPv6 allowed there as well.
 
@@ -23,11 +23,11 @@ I logged into the raspberry pi connected over LAN to my router and noticed the s
 
 ![router IPv6 DNS settings](/static/img/ipv6/router-dns.png)
 
-Maybe a DHCP issue with IPV6 DNS? To rule it out, I wanted to try pinging an IPv6 address directly - maybe google - and when I tried running `dig AAAA google.com`, no results from the DNS. Obviously, google will support IPv6 so I knew something was wrong with my DNS server. I then realized [moving to Adguard Home]({% post_url blog/2025-12-18-self-hosting-setup-2025 %}) DNS last year. When I checked Adguard Home's DNS server settings, I found this small toggle that I overlooked.
+Maybe an issue with DHCP providing the right IPv6 DNS server address? To rule it out, I wanted to try pinging an IPv6 address directly - maybe google - and when I tried running `dig AAAA google.com`, no results from the DNS. Obviously, google will support IPv6 so I knew something was wrong with my DNS server. I then remembered [switching]({% post_url blog/2025-12-18-self-hosting-setup-2025 %}) to AdGuard Home DNS last year. When I checked Adguard Home's DNS server settings, I found this small toggle that I overlooked.
 
 ![Adguard DNS settings](/static/img/ipv6/adguard-dns-settings.png)
 
-I unchecked that setting, saved and now I'm rocking IPv6 again.
+I unchecked that setting, saved it, and now I'm rocking IPv6 again.
 
 ```shell
 $ ping -4 google.com -c 5
@@ -56,4 +56,4 @@ rtt min/avg/max/mdev = 1.557/1.597/1.661/0.063 ms
 ```
 ---------
 
-[^1]: There are lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversals, SLAAC, etc.
+[^1]: There are a lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversal, SLAAC, etc.
