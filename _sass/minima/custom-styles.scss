@@ -140,3 +140,8 @@ details {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.highlight pre, .highlight code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
