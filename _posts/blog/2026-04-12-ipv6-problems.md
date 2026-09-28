@@ -6,10 +6,8 @@ category: blog
 tags: servers self-hosting home-network debugging
 description: "Debugging why IPv6 was not working on my home network even though my ISP supports it."
 ---
-<details>
-  <summary>TLDR (click to expand)</summary>
-  It was a setting on my Adguard Home DNS which disabled all IPv6 DNS queries.
-</details>
+
+<sub>Scroll to the bottom to see TLDR; </sub>
 
 I've been a long time ACT broadband customer for my home network and they did not support IPv6 for quite some time. A few years back I contacted their support, they confirmed they are slowly rolling it out for users in Chennai. I was one of those users and I enabled IPv6[^1] in my router and it worked without any issues. I ran a quick test and forgot about it.
 
@@ -54,6 +52,10 @@ PING google.com(maa05s16-in-x0e.1e100.net (2404:6800:4007:817::200e)) 56 data by
 5 packets transmitted, 5 received, 0% packet loss, time 12ms
 rtt min/avg/max/mdev = 1.557/1.597/1.661/0.063 ms
 ```
+---------
+
+_TLDR - It was a setting on my Adguard Home DNS which disabled all IPv6 DNS queries._
+
 ---------
 
 [^1]: There are a lot of benefits in enabling IPv6 in your network like reduced latencies, better P2P connections due to the lack of NAT traversal, SLAAC, etc.

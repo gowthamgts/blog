@@ -6,10 +6,8 @@ category: blog
 tags: servers self-hosting debugging llm
 description: "This post documents how my server was hacked and steps I took to recover it"
 ---
-<details>
-  <summary>TLDR (click to expand)</summary>
-  My outdated Plausible OSS instance was compromised and used for crypto mining. A relevant security fix had already been released, but I didn't upgrade which could be the entry point for the attacker.
-</details>
+
+<sub><i>Scroll to the bottom to see TLDR</i></sub>
 
 2 days back, on one of my servers I had a CPU high usage alert. It’s a Hetzner box for most of my [self-hosted]({% post_url blog/2025-12-18-self-hosting-setup-2025 %}) services managed via Terraform and Ansible[^1]. I thought it was temporary (*big mistake*) and since my on-call days were over, I went to bed. I noticed the alerts were still open in the morning flooding my email and personal slack channels.
 
@@ -59,6 +57,10 @@ It looked like my outdated Plausible instance had been exploited. I had not conf
 In hindsight, one mistake I made was not enabling backups for this server in Hetzner. I had only a manual snapshot from 15 days earlier, which was too stale to restore.
 
 A friendly reminder to keep your services and dependencies updated!
+
+---------
+
+_TLDR: My outdated Plausible OSS instance was compromised and used for crypto mining. A relevant security fix had already been released, but I didn't upgrade which could be the entry point for the attacker._
 
 ---------
 
