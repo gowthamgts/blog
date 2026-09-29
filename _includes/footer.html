@@ -4,17 +4,13 @@
 
   <div class="wrapper footer">
     <p>
-        <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-        <svg class="svg-icon orange">
-            <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-        </svg>
+        <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}" aria-label="RSS feed">
+          <span class="fa-icon fa-rss orange" aria-hidden="true"></span>
         </a>
     </p>
     <p>
-        <a href="{{ site.links.github }}">
-        <svg class="svg-icon grey">
-            <use xlink:href="{{ 'assets/minima-social-icons.svg#github' | relative_url }}"></use>
-        </svg>
+        <a href="{{ site.links.github }}" aria-label="GitHub">
+          <span class="fa-icon fa-github grey" aria-hidden="true"></span>
         </a>
     </p>
   </div>

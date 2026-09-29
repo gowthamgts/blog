@@ -1,24 +1,3 @@
-/* Variable fonts usage:
-:root { font-family: "Inter", sans-serif; }
-@supports (font-variation-settings: normal) {
-  :root { font-family: "InterVariable", sans-serif; font-optical-sizing: auto; }
-} */
-
-// @font-face {
-//   font-family: InterVariable;
-//   font-style: normal;
-//   font-weight: 100 900;
-//   font-display: swap;
-//   src: url("/static/fonts/inter/InterVariable.woff2") format("woff2");
-// }
-// @font-face {
-//   font-family: InterVariable;
-//   font-style: italic;
-//   font-weight: 100 900;
-//   font-display: swap;
-//   src: url("/static/fonts/inter/InterVariable-Italic.woff2") format("woff2");
-// }
-
 .site-title {
   font-weight: 600;
 }
@@ -75,10 +54,6 @@ ul {
   clear: both;
 }
 
-.home-section {
-  margin-bottom: 1.5em;
-}
-
 /* Homepage mobile responsive styles */
 @media screen and (max-width: 600px) {
   .home img {
@@ -86,6 +61,44 @@ ul {
     display: block;
     margin: 1em auto;
   }
+}
+
+/* Self-host just the Font Awesome 7 families/icons used by the footer. */
+@font-face {
+  font-family: "Font Awesome 7 Free";
+  src: url("../../static/fonts/fontawesome/fa-solid-900.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Font Awesome 7 Brands";
+  src: url("../../static/fonts/fontawesome/fa-brands-400.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+.fa-icon {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1;
+  font-style: normal;
+}
+
+.fa-rss::before {
+  font-family: "Font Awesome 7 Free";
+  font-weight: 900;
+  content: "\f09e";
+}
+
+.fa-github::before {
+  font-family: "Font Awesome 7 Brands";
+  font-weight: 400;
+  content: "\f09b";
 }
 
 .site-footer .wrapper {
@@ -107,15 +120,6 @@ blockquote {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-}
-
-.post-header {
-  margin-bottom: 1rem;
-}
-
-.post-title {
-  margin-bottom: 0;
-  line-height: 1.2;
 }
 
 .post-content h3,
@@ -144,4 +148,13 @@ details {
 .highlight pre, .highlight code {
   white-space: pre-wrap !important;
   word-break: break-word !important;
+}
+
+.page-content {
+  padding: 1rem 0;
+}
+
+.post-header {
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
 }

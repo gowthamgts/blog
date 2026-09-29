@@ -26,11 +26,6 @@ author:
   name: Gowtham Gopalakrishnan
   url: https://gowtham.dev
 
-header_pages:
-  - blog.md
-  - til.md
-  - colophon.md
-
 social:
   name: Gowtham Gopalakrishnan
 
@@ -40,3 +35,15 @@ exclude:
 
 minima:
   skin: auto
+  nav_pages:
+    - blog.md
+    - til.md
+    - colophon.md
+
+# Minima still uses legacy Sass imports and color helpers. Suppress warnings
+# from theme dependencies; its theme-provided stylesheet is also the entrypoint,
+# so its @import warnings require silencing that deprecation globally.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
